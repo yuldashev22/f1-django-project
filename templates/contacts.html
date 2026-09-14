@@ -1,0 +1,1018 @@
+<!doctype html>
+{% load static %}
+
+<html class="no-js" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>F1 Racing - Circuit Lab</title>
+
+    <meta name="description"
+          content="Зал славы F1 — легендарные пилоты, болиды, команды и исторические моменты Формулы-1.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon"
+          type="image/x-icon"
+          href="{% static 'assets/img/favicon.ico' %}">
+
+    <!-- =========================================
+         CSS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet"
+          href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+
+<body class="circuit-page">
+
+
+<!-- =========================================
+     HEADER
+========================================== -->
+
+<header>
+
+    <div class="header-area">
+
+        <div class="main-header">
+
+            <div class="header-bottom">
+
+                <div class="container">
+
+                    <div class="row align-items-center">
+
+
+                        <!-- LOGO -->
+
+                        <div class="col-xl-2 col-lg-2">
+
+                            <div class="logo">
+
+                                <a href="index.html">
+
+                                    <img
+                                        src="{% static 'assets/img/logo/logo.png' %}"
+                                        alt="F1">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- NAVIGATION -->
+
+                        <div class="col-xl-10 col-lg-10">
+
+                            <div class="main-menu f-right d-none d-lg-block">
+
+                                <nav>
+                                            <ul id="navigation">
+                                                <li><a href="index.html">Главная</a></li>
+                                                <li><a href="about.html">О F1</a></li>
+                                                <li><a href="services.html">Команды</a></li>
+                                                <li><a href="garage.html">Гараж F1</a></li>
+                                                <li><a href="#">Подробнее</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Новости</a></li>
+                                                        <li><a href="blog_details.html">Сезон</a></li>
+                                                        <li><a href="elements.html">Зал Славы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Трассы</a></li>
+                                                <!-- Header btn -->
+                                                <li>
+                                                    <div class="header-right-btn ml-40">
+                                                        <a href="#" class="btn"><img src="{% static 'assets/img/icon/smartphone.svg' %}" alt=""><b>F1 • 2026</b></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </nav>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     MOBILE MENU
+========================================== -->
+
+<div class="mobile_menu d-block d-lg-none">
+
+</div>
+
+
+<!-- =========================================
+     HERO
+========================================== -->
+
+<section class="circuit-hero">
+
+    <div class="container">
+
+        <div class="circuit-hero-content">
+
+            <span class="circuit-label">
+                FORMULA 1 • CIRCUIT LAB
+            </span>
+
+            <h1>
+                Трассы.<br>
+                Скорость.<br>
+                Характер.
+            </h1>
+
+            <p>
+                Исследуй самые интересные трассы Формулы-1.
+                Изучай конфигурацию, скорость, повороты,
+                зоны DRS и особенности каждого круга.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     CIRCUIT SELECTOR
+========================================== -->
+
+<section class="circuit-section">
+
+    <div class="container">
+
+
+        <div class="section-number">
+            01 / CIRCUIT SELECTOR
+        </div>
+
+
+        <h2 class="section-title">
+            Выбери трассу
+        </h2>
+
+
+        <div class="track-selector">
+
+
+            <button
+                class="track-btn active"
+                onclick="changeTrack('madring', this)">
+
+                MADRING
+
+            </button>
+
+
+            <button
+                class="track-btn"
+                onclick="changeTrack('monza', this)">
+
+                MONZA
+
+            </button>
+
+
+            <button
+                class="track-btn"
+                onclick="changeTrack('suzuka', this)">
+
+                SUZUKA
+
+            </button>
+
+
+            <button
+                class="track-btn"
+                onclick="changeTrack('spa', this)">
+
+                SPA
+
+            </button>
+
+
+            <button
+                class="track-btn"
+                onclick="changeTrack('monaco', this)">
+
+                MONACO
+
+            </button>
+
+
+        </div>
+
+
+        <!-- =====================================
+             MAIN CIRCUIT CARD
+        ====================================== -->
+
+        <div class="circuit-main">
+
+
+            <!-- CIRCUIT TITLE -->
+
+            <div class="circuit-heading">
+
+                <div>
+
+                    <span
+                        class="circuit-location"
+                        id="track-country">
+
+                        MADRID • SPAIN
+
+                    </span>
+
+
+                    <h2 id="track-name">
+
+                        MADRING
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 SVG CIRCUIT
+            ================================== -->
+
+            <div class="track-wrapper">
+
+<div class="track-wrapper">
+    <div class="track-visual">
+        <img
+            id="track-image"
+            src="{% static 'assets/img/circuits/madring.svg' %}"
+            alt="Схема трассы"
+        >
+    </div>
+</div>
+
+
+            </div>
+
+
+            <!-- =================================
+                 CIRCUIT STATISTICS
+            ================================== -->
+
+            <div class="circuit-stats">
+
+
+                <!-- LENGTH -->
+
+                <div class="stat-box">
+
+                    <span class="stat-name">
+                        Длина круга
+                    </span>
+
+                    <span
+                        class="stat-value"
+                        id="track-length">
+
+                        5.474
+
+                    </span>
+
+                    <span class="stat-unit">
+                        км
+                    </span>
+
+                </div>
+
+
+                <!-- CORNERS -->
+
+                <div class="stat-box">
+
+                    <span class="stat-name">
+                        Повороты
+                    </span>
+
+                    <span
+                        class="stat-value"
+                        id="track-corners">
+
+                        20
+
+                    </span>
+
+                </div>
+
+
+                <!-- MAX SPEED -->
+
+                <div class="stat-box">
+
+                    <span class="stat-name">
+                        Максимальная скорость
+                    </span>
+
+                    <span
+                        class="stat-value"
+                        id="track-max">
+
+                        340
+
+                    </span>
+
+                    <span class="stat-unit">
+                        км/ч
+                    </span>
+
+                </div>
+
+
+                <!-- AVERAGE SPEED -->
+
+                <div class="stat-box">
+
+                    <span class="stat-name">
+                        Средняя скорость
+                    </span>
+
+                    <span
+                        class="stat-value"
+                        id="track-average">
+
+                        218
+
+                    </span>
+
+                    <span class="stat-unit">
+                        км/ч
+                    </span>
+
+                </div>
+
+
+                <!-- DRS -->
+
+                <div class="stat-box">
+
+                    <span class="stat-name">
+                        DRS Zones
+                    </span>
+
+                    <span
+                        class="stat-value"
+                        id="track-drs">
+
+                        2
+
+                    </span>
+
+                </div>
+
+
+                <!-- BEST LAP -->
+
+                <div class="stat-box">
+
+                    <span class="stat-name">
+                        Лучший круг
+                    </span>
+
+                    <span
+                        class="stat-value"
+                        id="track-lap">
+
+                        1:32.000
+
+                    </span>
+
+                </div>
+
+
+                <!-- TYPE -->
+
+                <div class="stat-box">
+
+                    <span class="stat-name">
+                        Тип трассы
+                    </span>
+
+                    <span
+                        class="stat-value"
+                        id="track-type">
+
+                        HIGH
+
+                    </span>
+
+                </div>
+
+
+                <!-- DIFFICULTY -->
+
+                <div class="stat-box">
+
+                    <span class="stat-name">
+                        Сложность
+                    </span>
+
+                    <span
+                        class="stat-value"
+                        id="track-difficulty">
+
+                        8/10
+
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     TRACK CHARACTER
+========================================== -->
+
+<section class="circuit-section">
+
+    <div class="container">
+
+
+        <div class="section-number">
+            02 / TRACK CHARACTER
+        </div>
+
+
+        <h2 class="section-title">
+            Характер трассы
+        </h2>
+
+
+        <div class="character-grid">
+
+
+            <!-- SPEED -->
+
+            <div class="character-card">
+
+                <h3>
+                    Скорость
+                </h3>
+
+                <p id="track-speed-text">
+
+                    Быстрая современная трасса с длинными
+                    скоростными секциями. Максимальная скорость
+                    достигается на длинных прямых, а стабильность
+                    болида особенно важна при входе в быстрые
+                    повороты.
+
+                </p>
+
+            </div>
+
+
+            <!-- BRAKING -->
+
+            <div class="character-card">
+
+                <h3>
+                    Торможения
+                </h3>
+
+                <p>
+
+                    Несколько тяжёлых зон торможения создают
+                    хорошие возможности для атак и обгонов.
+                    Ошибка при торможении может стоить нескольких
+                    позиций.
+
+                </p>
+
+            </div>
+
+
+            <!-- AERODYNAMICS -->
+
+            <div class="character-card">
+
+                <h3>
+                    Аэродинамика
+                </h3>
+
+                <p>
+
+                    Настройка болида должна обеспечивать баланс
+                    между максимальной скоростью на прямых
+                    и достаточной прижимной силой в поворотах.
+
+                </p>
+
+            </div>
+
+
+            <!-- KEY FACTOR -->
+
+            <div class="character-card">
+
+                <h3>
+                    Ключевой фактор
+                </h3>
+
+                <p>
+
+                    На этой трассе особенно важны правильные
+                    выходы из медленных поворотов и сохранение
+                    скорости перед длинными прямыми.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     SECTORS
+========================================== -->
+
+<section class="circuit-section">
+
+    <div class="container">
+
+
+        <div class="section-number">
+            03 / SECTORS
+        </div>
+
+
+        <h2 class="section-title">
+            Три сектора
+        </h2>
+
+
+        <div class="sectors">
+
+
+            <!-- SECTOR 1 -->
+
+            <div class="sector">
+
+                <span class="sector-number">
+                    SECTOR 01
+                </span>
+
+
+                <h3>
+                    Скорость
+                </h3>
+
+
+                <p>
+
+                    Длинные прямые и быстрые связки.
+                    Здесь важны максимальная скорость
+                    и эффективность аэродинамики.
+
+                </p>
+
+            </div>
+
+
+            <!-- SECTOR 2 -->
+
+            <div class="sector">
+
+                <span class="sector-number">
+                    SECTOR 02
+                </span>
+
+
+                <h3>
+                    Техника
+                </h3>
+
+
+                <p>
+
+                    Сложная комбинация поворотов,
+                    где пилот должен точно контролировать
+                    баланс автомобиля.
+
+                </p>
+
+            </div>
+
+
+            <!-- SECTOR 3 -->
+
+            <div class="sector">
+
+                <span class="sector-number">
+                    SECTOR 03
+                </span>
+
+
+                <h3>
+                    Атака
+                </h3>
+
+
+                <p>
+
+                    Последняя часть круга определяет
+                    скорость выхода на стартовую прямую
+                    и возможность атаки.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     ANALYSIS
+========================================== -->
+
+<section class="circuit-section">
+
+    <div class="container">
+
+
+        <div class="track-analysis">
+
+
+            <h2>
+                Анализ трассы
+            </h2>
+
+
+            <p>
+
+                Каждая трасса Формулы-1 требует своего подхода.
+                Настройка болида, уровень прижимной силы,
+                работа с шинами и стиль пилотирования должны
+                соответствовать конфигурации круга.
+
+                В Circuit Lab можно сравнить трассы и понять,
+                чем одна конфигурация отличается от другой.
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FOOTER
+========================================== -->
+
+<footer class="f1-footer">
+
+    <div class="container">
+
+        <!-- TOP -->
+
+        <div class="f1-footer-top">
+
+            <div class="f1-footer-brand">
+
+                <div class="f1-footer-logo">
+                    F1
+                </div>
+
+                <p>
+                    Скорость. Технологии. Гонка.
+                    Всё, что делает Формулу-1 особенной.
+                </p>
+
+            </div>
+
+
+            <div class="f1-footer-column">
+
+                <span class="f1-footer-label">
+                    NAVIGATION
+                </span>
+
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Команды</a></li>
+                    <li><a href="garage.html">F1 Garage</a></li>
+                    <li><a href="blog.html">Новости</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="f1-footer-column">
+
+                <span class="f1-footer-label">
+                    EXPLORE
+                </span>
+
+                <ul>
+                    <li><a href="elements.html">Hall of Fame</a></li>
+                    <li><a href="blog_details.html">Season 2026</a></li>
+                    <li><a href="contact.html">Circuit Lab</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="f1-footer-season">
+
+                <span class="f1-footer-label">
+                    SEASON
+                </span>
+
+                <strong>2026</strong>
+
+                <p>
+                    Formula 1
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LINE -->
+
+        <div class="f1-footer-line"></div>
+
+
+        <!-- BOTTOM -->
+
+        <div class="f1-footer-bottom">
+
+            <span>
+                © 2026 F1 PROJECT
+            </span>
+
+            <span>
+                BUILT FOR THE LOVE OF RACING
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================== -->
+
+<script>
+
+    const tracks = {
+
+        madring: {
+
+            name: "MADRING",
+
+            country: "MADRID • SPAIN",
+
+            length: "5.474",
+
+            corners: "20",
+
+            max: "340",
+
+            average: "218",
+
+            drs: "2",
+
+            lap: "1:32.000",
+
+            type: "HIGH",
+
+            difficulty: "8/10",
+
+            image: "{% static 'assets/img/circuits/madring.svg' %}"
+
+        },
+
+
+        monza: {
+
+            name: "MONZA",
+
+            country: "MONZA • ITALY",
+
+            length: "5.793",
+
+            corners: "11",
+
+            max: "350",
+
+            average: "250",
+
+            drs: "2",
+
+            lap: "1:21.046",
+
+            type: "SPEED",
+
+            difficulty: "7/10",
+
+            image: "{% static 'assets/img/circuits/monza.svg' %}"
+
+        },
+
+
+        suzuka: {
+
+            name: "SUZUKA",
+
+            country: "SUZUKA • JAPAN",
+
+            length: "5.807",
+
+            corners: "18",
+
+            max: "330",
+
+            average: "230",
+
+            drs: "2",
+
+            lap: "1:30.983",
+
+            type: "TECHNICAL",
+
+            difficulty: "9/10",
+
+            image: "{% static 'assets/img/circuits/suzuka.svg' %}"
+
+        },
+
+
+        spa: {
+
+            name: "SPA-FRANCORCHAMPS",
+
+            country: "STAVELOT • BELGIUM",
+
+            length: "7.004",
+
+            corners: "19",
+
+            max: "330",
+
+            average: "235",
+
+            drs: "2",
+
+            lap: "1:44.701",
+
+            type: "FAST",
+
+            difficulty: "9/10",
+
+            image: "{% static 'assets/img/circuits/spa.svg' %}"
+
+        },
+
+
+        monaco: {
+
+            name: "MONACO",
+
+            country: "MONTE CARLO • MONACO",
+
+            length: "3.337",
+
+            corners: "19",
+
+            max: "290",
+
+            average: "160",
+
+            drs: "1",
+
+            lap: "1:10.166",
+
+            type: "STREET",
+
+            difficulty: "10/10",
+
+            image: "{% static 'assets/img/circuits/monaco.svg' %}"
+
+        }
+
+    };
+
+function changeTrack(trackId, button) {
+
+    const track = tracks[trackId];
+
+    if (!track) {
+        return;
+    }
+
+    // Активная кнопка
+    document.querySelectorAll(".track-btn").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    // Основная информация
+    document.getElementById("track-name").textContent = track.name;
+    document.getElementById("track-country").textContent = track.country;
+
+    // Характеристики
+    document.getElementById("track-length").textContent = track.length;
+    document.getElementById("track-corners").textContent = track.corners;
+    document.getElementById("track-max").textContent = track.max;
+    document.getElementById("track-average").textContent = track.average;
+    document.getElementById("track-drs").textContent = track.drs;
+    document.getElementById("track-lap").textContent = track.lap;
+    document.getElementById("track-type").textContent = track.type;
+    document.getElementById("track-difficulty").textContent = track.difficulty;
+
+    // Меняем SVG трассы
+    const trackImage = document.getElementById("track-image");
+
+    if (trackImage && track.image) {
+        trackImage.src = track.image;
+        trackImage.alt = "Схема трассы " + track.name;
+    }
+}
+
+
+</script>
+
+
+<!-- =========================================
+     JS FILES
+========================================== -->
+
+<script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}">
+</script>
+
+<script src="{% static 'assets/js/popper.min.js' %}">
+</script>
+
+<script src="{% static 'assets/js/bootstrap.min.js' %}">
+</script>
+
+<script src="{% static 'assets/js/main.js' %}">
+</script>
+
+
+</body>
+
+</html>

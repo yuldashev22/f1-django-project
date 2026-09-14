@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="22"
+     height="20"
+     viewBox="0 0 22 20">
+
+    <!-- Держатель флага -->
+    <path d="M4 2V18"
+          stroke="#fff"
+          stroke-width="2"
+          stroke-linecap="round"/>
+
+    <!-- Клетчатый флаг -->
+    <path d="M5 2H21L18.5 6L21 10H5V2Z"
+          fill="#fff"/>
+
+    <!-- Клетки -->
+    <path d="M5 2H9V6H5V2Z" fill="#222"/>
+    <path d="M13 2H17V6H13V2Z" fill="#222"/>
+    <path d="M9 6H13V10H9V6Z" fill="#222"/>
+    <path d="M17 6H21V10H17V6Z" fill="#222"/>
+
+</svg>

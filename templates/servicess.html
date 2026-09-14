@@ -1,0 +1,727 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>F1 Racing - Teams</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/progressbar_barfiller.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated-headline.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body class="f1-teams-page">
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/loder.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="index.html">Главная</a></li>
+                                                <li><a href="about.html">О F1</a></li>
+                                                <li><a href="services.html">Команды</a></li>
+                                                <li><a href="garage.html">Гараж F1</a></li>
+                                                <li><a href="#">Подробнее</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Новости</a></li>
+                                                        <li><a href="blog_details.html">Сезон</a></li>
+                                                        <li><a href="elements.html">Зал Славы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Трассы</a></li>
+                                                <!-- Header btn -->
+                                                <li>
+                                                    <div class="header-right-btn ml-40">
+                                                        <a href="#" class="btn"><img src="{% static 'assets/img/icon/smartphone.svg' %}" alt=""><b>F1 • 2026</b></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2 " id="teams">
+            <div class="slider-height2 slider-bg4 hero-overly d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero__caption hero__caption2">
+                                <h2>Команды </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!--? services area start -->
+        <section class="services-section section-padding30 fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 40px">
+                        <div class="single-cat mb-40">
+                            <div class="cat-icon">
+                                <img src="{% static 'assets/img/gallery/redbull.jpg' %}" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Oracle <br> Red Bull</a></h5>
+                                <p>Одна из самых успешных команд современной Формулы-1. Red Bull Racing известна своей высокой скоростью, смелой стратегией и постоянной борьбой за победы и чемпионские титулы.
+</p>
+                            </div>
+                            <a href="#redbull-pilots" class="btn black-btn">Пилоты</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 40px">
+                        <div class="single-cat mb-40">
+                            <div class="cat-icon">
+                                <img src="{% static 'assets/img/gallery/ferrari.jpg' %}" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Ferrari</a></h5> <br>
+                                <p>Легендарная команда Формулы-1 с богатой историей и культовым итальянским наследием. Ferrari сочетает инженерное мастерство, скорость и стремление к победе на каждом этапе чемпионата.
+</p>
+                            </div>
+                            <a href="#ferrari-pilots" class="btn black-btn">Пилоты</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 40px">
+                        <div class="single-cat mb-40">
+                            <div class="cat-icon">
+                                <img src="{% static 'assets/img/gallery/mercedes.jpg' %}" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Mercedes AMG <br> Petronas </a></h5>
+                                <p>Одна из ведущих команд Формулы-1, известная своим инженерным совершенством, высокой скоростью и сильными результатами. Mercedes-AMG сочетает передовые технологии, командную работу и стремление к победе.
+</p>
+                            </div>
+                            <a href="#mercedes-pilots" class="btn black-btn">Пилоты</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 40px">
+                        <div class="single-cat mb-40">
+                            <div class="cat-icon">
+                                <img src="{% static 'assets/img/gallery/mclaren.jpg' %}" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">McLaren</a></h5> <br>
+                                <p>Британская команда с богатой историей в автоспорте. McLaren известна ярким стилем, сильной инженерией и стремлением бороться за победы на каждом этапе Формулы-1.
+</p>
+                            </div>
+                            <a href="#mclaren-pilots" class="btn black-btn">Пилоты</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 40px">
+                        <div class="single-cat mb-40">
+                            <div class="cat-icon">
+                                <img src="{% static 'assets/img/gallery/Astonmartin.jpg' %}" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">aramco <br> Aston Martin</a></h5>
+                                <p>Британская команда, сочетающая элегантный дизайн, современные технологии и стремление к высоким результатам. Aston Martin Aramco продолжает развиваться и бороться за успех на трассах Формулы-1.
+</p>
+                            </div>
+                            <a href="#astonmartin-pilots" class="btn black-btn">Пилоты</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 40px">
+                        <div class="single-cat mb-40">
+                            <div class="cat-icon">
+                                <img src="{% static 'assets/img/gallery/cadillac.jpg' %}" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Cadillac</a></h5> <br>
+                                <p>Новая команда Формулы-1, представляющая американский автоспорт на мировой арене. Cadillac объединяет американское наследие, современные технологии и амбиции бороться за высокие позиции в чемпионате.
+</p>
+                            </div>
+                            <a href="#cadillac-pilots" class="btn black-btn">Пилоты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services End -->
+        <!--? Team Comparison Area Start -->
+<section class="comparison-area section-padding" id="comparison">
+    <div class="container">
+
+        <!-- Заголовок -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-tittle mb-50">
+                    <h2>Сравнение команд</h2>
+                    <p>
+                        Основные команды и их пилоты в сезоне Формулы-1 2026 года.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Таблица -->
+        <div class="comparison-table-wrapper">
+            <div class="comparison-table">
+
+                <!-- Заголовок таблицы -->
+                <div class="comparison-row comparison-header">
+                    <div class="comparison-cell team-name">
+                        Команда
+                    </div>
+
+                    <div class="comparison-cell">
+                        Пилот 1
+                    </div>
+
+                    <div class="comparison-cell">
+                        Пилот 2
+                    </div>
+
+                    <div class="comparison-cell country">
+                        Страна
+                    </div>
+                </div>
+
+                <!-- Red Bull -->
+                <div class="comparison-row">
+                    <div class="comparison-cell team-name">
+                        <strong>Red Bull Racing</strong>
+                    </div>
+
+                    <div class="comparison-cell">
+                        Макс Ферстаппен
+                    </div>
+
+                    <div class="comparison-cell">
+                        Исак Хаджар
+                    </div>
+
+                    <div class="comparison-cell country">
+                        🇦🇹 Австрия
+                    </div>
+                </div>
+
+                <!-- Ferrari -->
+                <div class="comparison-row">
+                    <div class="comparison-cell team-name">
+                        <strong>Ferrari</strong>
+                    </div>
+
+                    <div class="comparison-cell">
+                        Шарль Леклер
+                    </div>
+
+                    <div class="comparison-cell">
+                        Льюис Хэмилтон
+                    </div>
+
+                    <div class="comparison-cell country">
+                        🇮🇹 Италия
+                    </div>
+                </div>
+
+                <!-- Mercedes -->
+                <div class="comparison-row">
+                    <div class="comparison-cell team-name">
+                        <strong>Mercedes-AMG</strong>
+                    </div>
+
+                    <div class="comparison-cell">
+                        Джордж Расселл
+                    </div>
+
+                    <div class="comparison-cell">
+                        Кими Антонелли
+                    </div>
+
+                    <div class="comparison-cell country">
+                        🇩🇪 Германия
+                    </div>
+                </div>
+
+                <!-- McLaren -->
+                <div class="comparison-row">
+                    <div class="comparison-cell team-name">
+                        <strong>McLaren</strong>
+                    </div>
+
+                    <div class="comparison-cell">
+                        Ландо Норрис
+                    </div>
+
+                    <div class="comparison-cell">
+                        Оскар Пиастри
+                    </div>
+
+                    <div class="comparison-cell country">
+                        🇬🇧 Великобритания
+                    </div>
+                </div>
+
+                <!-- Aston Martin -->
+                <div class="comparison-row">
+                    <div class="comparison-cell team-name">
+                        <strong>Aston Martin Aramco</strong>
+                    </div>
+
+                    <div class="comparison-cell">
+                        Фернандо Алонсо
+                    </div>
+
+                    <div class="comparison-cell">
+                        Лэнс Стролл
+                    </div>
+
+                    <div class="comparison-cell country">
+                        🇬🇧 Великобритания
+                    </div>
+                </div>
+
+                <!-- Cadillac -->
+                <div class="comparison-row">
+                    <div class="comparison-cell team-name">
+                        <strong>Cadillac</strong>
+                    </div>
+
+                    <div class="comparison-cell">
+                        Серхио Перес
+                    </div>
+
+                    <div class="comparison-cell">
+                        Валттери Боттас
+                    </div>
+
+                    <div class="comparison-cell country">
+                        🇺🇸 США
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--? Team Comparison Area End -->
+        <!--? Drivers Area Start -->
+<section class="team-area section-padding">
+    <div class="container">
+
+        <!-- Заголовок -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-tittle mb-60">
+                    <h2>Пилоты</h2>
+                    <p>Гонщики, которые представляют команды Формулы-1 в сезоне 2026.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Red Bull Racing -->
+        <div class="row mb-80" id="redbull-pilots">
+            <div class="col-lg-12">
+                <div class="section-tittle mb-30">
+                    <h2>Red Bull Racing</h2>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/max-verstappen.jpg' %}" alt="Макс Ферстаппен">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Макс Ферстаппен</h2>
+                        <p>Red Bull Racing · №3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/isack-hadjar.jpg' %}" alt="Исак Хаджар">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Исак Хаджар</h2>
+                        <p>Red Bull Racing · №6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Ferrari -->
+        <div class="row mb-80" id="ferrari-pilots">
+            <div class="col-lg-12">
+                <div class="section-tittle mb-30">
+                    <h2>Ferrari</h2>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/charles-leclerc.jpg' %}" alt="Шарль Леклер">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Шарль Леклер</h2>
+                        <p>Ferrari · №16</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/lewis-hamilton.jpg' %}" alt="Льюис Хэмилтон">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Льюис Хэмилтон</h2>
+                        <p>Ferrari · №44</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Mercedes -->
+        <div class="row mb-80" id="mercedes-pilots">
+            <div class="col-lg-12">
+                <div class="section-tittle mb-30">
+                    <h2>Mercedes-AMG</h2>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/george-russell.jpg' %}" alt="Джордж Расселл">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Джордж Расселл</h2>
+                        <p>Mercedes-AMG · №63</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/kimi-antonelli.jpg' %}" alt="Кими Антонелли">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Кими Антонелли</h2>
+                        <p>Mercedes-AMG · №12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- McLaren -->
+        <div class="row mb-80" id="mclaren-pilots">
+            <div class="col-lg-12">
+                <div class="section-tittle mb-30">
+                    <h2>McLaren</h2>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/lando-norris.jpg' %}" alt="Ландо Норрис">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Ландо Норрис</h2>
+                        <p>McLaren · №1</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/oscar-piastri.jpg' %}" alt="Оскар Пиастри">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Оскар Пиастри</h2>
+                        <p>McLaren · №81</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Aston Martin -->
+        <div class="row mb-80" id="astonmartin-pilots">
+            <div class="col-lg-12">
+                <div class="section-tittle mb-30">
+                    <h2>Aston Martin Aramco</h2>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/fernando-alonso.jpg' %}" alt="Фернандо Алонсо">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Фернандо Алонсо</h2>
+                        <p>Aston Martin · №14</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/lance-stroll.jpg' %}" alt="Лэнс Стролл">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Лэнс Стролл</h2>
+                        <p>Aston Martin · №18</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Cadillac -->
+        <div class="row mb-80" id="cadillac-pilots">
+            <div class="col-lg-12">
+                <div class="section-tittle mb-30">
+                    <h2>Cadillac</h2>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/sergio-perez.jpg' %}" alt="Серхио Перес">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Серхио Перес</h2>
+                        <p>Cadillac · №11</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="single-team">
+                    <div class="team-img">
+                        <img src="{% static 'assets/img/drivers/valtteri-bottas.jpg' %}" alt="Валттери Боттас">
+                    </div>
+                    <div class="team-caption">
+                        <h2>Валттери Боттас</h2>
+                        <p>Cadillac · №77</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--? Drivers Area End -->
+    </main>
+<!--? Footer Area Start -->
+
+    <!-- =========================================
+     F1 FOOTER
+========================================== -->
+
+<footer class="f1-footer">
+
+    <div class="container">
+
+        <!-- TOP -->
+
+        <div class="f1-footer-top">
+
+            <div class="f1-footer-brand">
+
+                <div class="f1-footer-logo">
+                    F1
+                </div>
+
+                <p>
+                    Скорость. Технологии. Гонка.
+                    Всё, что делает Формулу-1 особенной.
+                </p>
+
+            </div>
+
+
+            <div class="f1-footer-column">
+
+                <span class="f1-footer-label">
+                    NAVIGATION
+                </span>
+
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Команды</a></li>
+                    <li><a href="garage.html">F1 Garage</a></li>
+                    <li><a href="blog.html">Новости</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="f1-footer-column">
+
+                <span class="f1-footer-label">
+                    EXPLORE
+                </span>
+
+                <ul>
+                    <li><a href="elements.html">Hall of Fame</a></li>
+                    <li><a href="blog_details.html">Season 2026</a></li>
+                    <li><a href="contact.html">Circuit Lab</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="f1-footer-season">
+
+                <span class="f1-footer-label">
+                    SEASON
+                </span>
+
+                <strong>2026</strong>
+
+                <p>
+                    Formula 1
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LINE -->
+
+        <div class="f1-footer-line"></div>
+
+
+        <!-- BOTTOM -->
+
+        <div class="f1-footer-bottom">
+
+            <span>
+                © 2026 F1 PROJECT
+            </span>
+
+            <span>
+                BUILT FOR THE LOVE OF RACING
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!--? Footer Area End -->
+
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'assets/js/wow.min.js"></script>
+    <script src="{% static 'assets/js/animated.headline.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Date Picker -->
+    <script src="{% static 'assets/js/gijgo.min.js' %}"></script>
+    <!-- Nice-select, sticky -->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.sticky.js' %}"></script>
+    <!-- Progress -->
+    <script src="{% static 'assets/js/jquery.barfiller.js' %}"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/hover-direction-snake.min.js' %}"></script>
+
+    <!-- contact js -->
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.form.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'assets/js/mail-script.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{% static 'assets/js/plugins.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>

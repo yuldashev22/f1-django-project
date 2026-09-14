@@ -1,0 +1,651 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>F1 Racing - News</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/hamburgers.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cards = document.querySelectorAll(".f1-news-card");
+
+    const observer = new IntersectionObserver(function (entries) {
+
+        entries.forEach(function (entry) {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.12
+    });
+
+
+    cards.forEach(function (card, index) {
+
+        card.style.transitionDelay =
+            (index * 100) + "ms";
+
+        observer.observe(card);
+
+    });
+
+});
+</script>
+</head>
+<body class="f1-news-page">
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/loder.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="index.html">Главная</a></li>
+                                                <li><a href="about.html">О F1</a></li>
+                                                <li><a href="services.html">Команды</a></li>
+                                                <li><a href="garage.html">Гараж F1</a></li>
+                                                <li><a href="#">Подробнее</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Новости</a></li>
+                                                        <li><a href="blog_details.html">Сезон</a></li>
+                                                        <li><a href="elements.html">Зал Славы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Трассы</a></li>
+                                                <!-- Header btn -->
+                                                <li>
+                                                    <div class="header-right-btn ml-40">
+                                                        <a href="#" class="btn"><img src="{% static 'assets/img/icon/smartphone.svg' %}" alt=""><b>F1 • 2026</b></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+<main>
+
+    <!-- =========================
+         F1 NEWS HERO
+    ========================== -->
+    <section class="f1-news-hero">
+
+        <div class="container">
+
+            <div class="f1-news-hero-content">
+
+                <div>
+                    <span class="f1-label">FORMULA 1 / NEWSROOM</span>
+
+                    <h1>
+                        F1<br>
+                        News
+                    </h1>
+
+                    <p>
+                        Новости команд, технологии, пилоты
+                        и главные события гоночного мира.
+                    </p>
+                </div>
+
+                <div class="f1-season">
+                    <span>SEASON</span>
+                    <strong>2026</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NEWS SECTION
+    ========================== -->
+    <section class="f1-news">
+
+        <div class="container">
+
+            <div class="f1-news-layout">
+
+
+                <!-- =========================
+                     LEFT SIDE
+                ========================== -->
+
+                <div class="f1-news-main">
+
+{% for news in page_obj %}
+
+<article class="f1-news-card">
+
+    <div class="f1-news-image">
+        <img src="{% static news.image %}" alt="{{ news.title }}">
+
+        <span class="news-number">
+            {{ news.number }}
+        </span>
+
+        <span class="news-category">
+            {{ news.category }}
+        </span>
+    </div>
+
+    <div class="f1-news-info">
+
+        <span class="news-date">
+            {{ news.date }}
+        </span>
+
+        <h2>
+            {{ news.title }}
+        </h2>
+
+        <p>
+            {{ news.text }}
+        </p>
+
+        <a href="#" class="news-link">
+            Читать материал <span>↗</span>
+        </a>
+
+    </div>
+
+</article>
+
+{% endfor %}
+
+
+
+                    <!-- PAGINATION -->
+
+                    <div class="f1-pagination">
+
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">
+            ←
+        </a>
+    {% endif %}
+
+    {% for num in page_obj.paginator.page_range %}
+
+        <a href="?page={{ num }}"
+           class="{% if page_obj.number == num %}active{% endif %}">
+            {{ num|stringformat:"02d" }}
+        </a>
+
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}"
+           class="next">
+            NEXT ↗
+        </a>
+    {% endif %}
+
+</div>
+
+
+                </div>
+
+
+                <!-- =========================
+                     SIDEBAR
+                ========================== -->
+
+                <aside class="f1-sidebar">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="f1-side-block">
+
+                        <span class="side-label">
+                            SEARCH
+                        </span>
+
+                        <form class="f1-search">
+
+                            <input
+                                type="text"
+                                placeholder="Поиск по F1"
+                            >
+
+                            <button type="submit">
+                                <i class="ti-search"></i>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- CATEGORIES -->
+
+                    <div class="f1-side-block">
+
+                        <span class="side-label">
+                            CATEGORIES
+                        </span>
+
+                        <div class="f1-categories">
+
+                            <a href="#">
+                                <span>Команды</span>
+                                <small>06</small>
+                            </a>
+
+                            <a href="#">
+                                <span>Пилоты</span>
+                                <small>20</small>
+                            </a>
+
+                            <a href="#">
+                                <span>Гран-при</span>
+                                <small>24</small>
+                            </a>
+
+                            <a href="#">
+                                <span>Технологии</span>
+                                <small>16</small>
+                            </a>
+
+                            <a href="#">
+                                <span>Стратегия</span>
+                                <small>09</small>
+                            </a>
+
+                            <a href="#">
+                                <span>История F1</span>
+                                <small>21</small>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- F1 TECH -->
+
+                    <div class="f1-side-block">
+
+                        <span class="side-label">
+                            LATEST STORIES
+                        </span>
+
+
+                        <div class="f1-tech">
+
+
+                            <a href="https://www.championat.com/news/auto/_f1/1.html">
+
+                                <img
+                                    src="{% static 'assets/img/gallery/ivents.png' %}"
+                                    alt=""
+                                >
+
+                                <div>
+                                    <small>01</small>
+<span>Главные события</span>
+                                </div>
+
+                                <b>↗</b>
+
+                            </a>
+
+
+                            <a href="https://www.f1-fansite.com/ru/glossary/qualifying/">
+
+                                <img
+                                    src="{% static 'assets/img/gallery/kval.png' %}"
+                                    alt=""
+                                >
+
+                                <div>
+                                    <small>02</small>
+<span>Квалификация</span>
+                                </div>
+
+                                <b>↗</b>
+
+                            </a>
+
+
+                            <a href="https://f-1world.ru/tags/%D0%BF%D0%B0%D0%B4%D0%B4%D0%BE%D0%BA/">
+
+                                <img
+                                    src="{% static 'assets/img/gallery/paddok.png' %}"
+                                    alt=""
+                                >
+
+                                <div>
+                                    <small>03</small>
+<span>Новости паддока</span>
+                                </div>
+
+                                <b>↗</b>
+
+                            </a>
+
+
+                            <a href="https://www.championat.com/tags/45750-borba-za-titul-v-formule-1/">
+
+                                <img
+                                    src="{% static 'assets/img/gallery/pvp.png' %}"
+                                    alt=""
+                                >
+
+                                <div>
+                                    <small>04</small>
+<span>Борьба за чемпионство</span>
+                                </div>
+
+                                <b>↗</b>
+
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TAGS -->
+
+                    <div class="f1-side-block">
+
+                        <span class="side-label">
+                            F1 TAGS
+                        </span>
+
+                        <div class="f1-tags">
+
+                            <a href="#">Formula 1</a>
+<a href="#">Grand Prix</a>
+<a href="#">Qualifying</a>
+<a href="#">Race</a>
+<a href="#">Drivers</a>
+<a href="#">Teams</a>
+<a href="#">Paddock</a>
+<a href="#">Championship</a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GALLERY -->
+
+                    <div class="f1-side-block">
+
+                        <span class="side-label">
+                            GALLERY / 2026
+                        </span>
+
+                        <div class="f1-gallery">
+
+                            <a href="#antonelli_monza">
+                                <img src="{% static 'assets/img/gallery/antonelli.png' %}" alt="">
+                            </a>
+
+                            <a href="#gasli">
+                                <img src="{% static 'assets/img/gallery/gasli.png' %}" alt="">
+                            </a>
+
+                            <a href="#leclerc_lewis">
+                                <img src="{% static 'assets/img/gallery/ferincident.png' %}" alt="">
+                            </a>
+
+                            <a href="#madring">
+                                <img src="{% static 'assets/img/gallery/madrid.png' %}" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NEWSLETTER -->
+
+                    <div class="f1-subscribe">
+
+                        <span class="side-label">
+                            RACE UPDATES
+                        </span>
+
+                        <h3>
+                            Будь в курсе
+главных событий.
+                        </h3>
+
+                        <p>
+                            Главные новости, результаты гонок
+и события паддока — в одном месте.
+                        </p>
+
+                        <form>
+
+                            <input
+                                type="email"
+                                placeholder="Ваш email"
+                            >
+
+                            <button type="submit">
+                                Подписаться ↗
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+<footer class="f1-footer">
+
+    <div class="container">
+
+        <!-- TOP -->
+
+        <div class="f1-footer-top">
+
+            <div class="f1-footer-brand">
+
+                <div class="f1-footer-logo">
+                    F1
+                </div>
+
+                <p>
+                    Скорость. Технологии. Гонка.
+                    Всё, что делает Формулу-1 особенной.
+                </p>
+
+            </div>
+
+
+            <div class="f1-footer-column">
+
+                <span class="f1-footer-label">
+                    NAVIGATION
+                </span>
+
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Команды</a></li>
+                    <li><a href="garage.html">F1 Garage</a></li>
+                    <li><a href="blog.html">Новости</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="f1-footer-column">
+
+                <span class="f1-footer-label">
+                    EXPLORE
+                </span>
+
+                <ul>
+                    <li><a href="elements.html">Hall of Fame</a></li>
+                    <li><a href="blog_details.html">Season 2026</a></li>
+                    <li><a href="contact.html">Circuit Lab</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="f1-footer-season">
+
+                <span class="f1-footer-label">
+                    SEASON
+                </span>
+
+                <strong>2026</strong>
+
+                <p>
+                    Formula 1
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LINE -->
+
+        <div class="f1-footer-line"></div>
+
+
+        <!-- BOTTOM -->
+
+        <div class="f1-footer-bottom">
+
+            <span>
+                © 2026 F1 PROJECT
+            </span>
+
+            <span>
+                BUILT FOR THE LOVE OF RACING
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- JS here -->
+
+    <script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/animated.headline.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Date Picker -->
+    <script src="{% static 'assets/js/gijgo.min.js' %}"></script>
+    <!-- Nice-select, sticky -->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.sticky.js' %}"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/hover-direction-snake.min.js' %}"></script>
+
+    <!-- contact js -->
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.form.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'assets/js/mail-script.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{% static 'assets/js/plugins.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>

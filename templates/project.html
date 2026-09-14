@@ -1,0 +1,793 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>F1 Racing - Garage</title>
+    <meta name="description" content="F1 Garage — болиды, технологии и инженерные решения Формулы-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/progressbar_barfiller.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated-headline.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body class="f1-garage-page">
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/loder.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header">
+                <div class="header-bottom header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="{% static 'assets/img/logo/logo.png' %}" alt="F1">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="index.html">Главная</a></li>
+                                                <li><a href="about.html">О F1</a></li>
+                                                <li><a href="services.html">Команды</a></li>
+                                                <li><a href="garage.html">Гараж F1</a></li>
+                                                <li><a href="#">Подробнее</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Новости</a></li>
+                                                        <li><a href="blog_details.html">Сезон</a></li>
+                                                        <li><a href="elements.html">Зал Славы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Трассы</a></li>
+                                                <!-- Header btn -->
+                                                <li>
+                                                    <div class="header-right-btn ml-40">
+                                                        <a href="#" class="btn"><img src="{% static 'assets/img/icon/smartphone.svg' %}" alt=""><b>F1 • 2026</b></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    <main>
+
+        <!-- Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 slider-bg5 hero-overly d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero__caption hero__caption2">
+                                <h2>F1 Garage</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- F1 Garage Info Start -->
+<section class="f1-garage-info">
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="garage-header">
+
+            <div class="garage-header-top">
+                <span>F1 GARAGE</span>
+                <span>ENGINEERING / PERFORMANCE</span>
+            </div>
+
+            <h2>
+                Где начинается<br>
+                настоящая скорость.
+            </h2>
+
+            <p>
+                Формула-1 — это результат работы не только пилота.
+                За каждым быстрым кругом стоят инженеры, механики,
+                аналитики и стратеги, которые работают с каждой
+                деталью автомобиля.
+            </p>
+
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="garage-main">
+
+            <!-- Information Cards -->
+            <div class="garage-grid">
+
+                <div class="garage-card">
+
+                    <span class="garage-card-number">01</span>
+
+                    <div class="garage-card-content">
+
+                        <h3>Телеметрия</h3>
+
+                        <p>
+                            Болид постоянно передаёт команде данные
+                            о скорости, торможении, температуре,
+                            нагрузках и работе систем.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="garage-card">
+
+                    <span class="garage-card-number">02</span>
+
+                    <div class="garage-card-content">
+
+                        <h3>Настройки</h3>
+
+                        <p>
+                            Подвеска, аэродинамика и силовая установка
+                            настраиваются под особенности каждой
+                            конкретной трассы.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="garage-card">
+
+                    <span class="garage-card-number">03</span>
+
+                    <div class="garage-card-content">
+
+                        <h3>Шины</h3>
+
+                        <p>
+                            Температура и износ шин определяют уровень
+                            сцепления. Правильный выбор состава способен
+                            изменить темп всей гонки.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="garage-card">
+
+                    <span class="garage-card-number">04</span>
+
+                    <div class="garage-card-content">
+
+                        <h3>Стратегия</h3>
+
+                        <p>
+                            Команда рассчитывает пит-стопы, выбирает
+                            тактику и реагирует на происходящее
+                            на трассе в режиме реального времени.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Image -->
+            <div class="garage-visual">
+
+                <img src="{% static 'assets/img/gallery/contact-img.png' %}"
+                     alt="F1 Garage">
+
+                <div class="garage-visual-caption">
+                    <span>01</span>
+                    <div>
+                        <strong>PRECISION</strong>
+                        <small>EVERY SECOND MATTERS</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- F1 Garage Info End -->
+
+        <!-- F1 Garage Intro Start -->
+        <div class="visit-tailor-area fix">
+
+            <!-- Right Contents -->
+            <div class="tailor-offers"></div>
+
+            <!-- Left Contents -->
+            <div class="tailor-details">
+
+                <h2>Добро пожаловать в F1 Garage</h2>
+
+                <p>
+                    Здесь собраны главные элементы современной Формулы-1:
+                    гоночные болиды, силовые установки, аэродинамика и технологии,
+                    которые превращают инженерные идеи в скорость на трассе.
+                </p>
+
+                <p class="pera-bottom">
+                    От первых чертежей до клетчатого флага — каждая деталь
+                    болида имеет значение. Изучай машины и технологии,
+                    которые определяют результат на каждом Гран-при.
+                </p>
+
+            </div>
+        </div>
+        <!-- F1 Garage Intro End -->
+
+
+        <!-- F1 Garage Cards Start -->
+        <section class="services-section services-section2 pb-padding fix">
+
+            <div class="container">
+
+                    <div class="row services-active">
+
+                        <!-- Ferrari -->
+                        <div class="col-lg-4">
+                            <div class="single-cat">
+
+                                <div class="cat-icon">
+                                    <img src="{% static 'assets/img/gallery/sf25.png' %}"
+                                         alt="Ferrari F1">
+                                </div>
+
+                                <div class="cat-cap">
+                                    <h5>
+                                        <a href="services.html">
+                                            Ferrari SF-25
+                                        </a>
+                                    </h5>
+
+                                    <p>
+                                        Итальянская машина с легендарной
+                                        историей Scuderia Ferrari.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- McLaren -->
+                        <div class="col-lg-4">
+                            <div class="single-cat">
+
+                                <div class="cat-icon">
+                                    <img src="{% static 'assets/img/gallery/mcl39.png' %}"
+                                         alt="McLaren F1">
+                                </div>
+
+                                <div class="cat-cap">
+                                    <h5>
+                                        <a href="services.html">
+                                            McLaren MCL39
+                                        </a>
+                                    </h5>
+
+                                    <p>
+                                        Аэродинамика, баланс и скорость —
+                                        ключевые элементы современной машины.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Red Bull -->
+                        <div class="col-lg-4">
+                            <div class="single-cat">
+
+                                <div class="cat-icon">
+                                    <img src="{% static 'assets/img/gallery/rb21.png' %}"
+                                         alt="Red Bull Racing">
+                                </div>
+
+                                <div class="cat-cap">
+                                    <h5>
+                                        <a href="services.html">
+                                            Red Bull RB21
+                                        </a>
+                                    </h5>
+
+                                    <p>
+                                        Машина, созданная для максимальной
+                                        эффективности на гоночной трассе.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Mercedes -->
+                        <div class="col-lg-4">
+                            <div class="single-cat">
+
+                                <div class="cat-icon">
+                                    <img src="{% static 'assets/img/gallery/w16.png' %}"
+                                         alt="Mercedes F1">
+                                </div>
+
+                                <div class="cat-cap">
+                                    <h5>
+                                        <a href="services.html">
+                                            Mercedes W16
+                                        </a>
+                                    </h5>
+
+                                    <p>
+                                        Инженерные решения Mercedes,
+                                        направленные на стабильность и темп.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Power Unit -->
+                        <div class="col-lg-4">
+                            <div class="single-cat">
+
+                                <div class="cat-icon">
+                                    <img src="{% static 'assets/img/gallery/powerunit.png' %}"
+                                         alt="F1 Power Unit">
+                                </div>
+
+                                <div class="cat-cap">
+                                    <h5>
+                                        <a href="services.html">
+                                            F1 Power Unit
+                                        </a>
+                                    </h5>
+
+                                    <p>
+                                        Гибридная силовая установка,
+                                        где мощность встречается с эффективностью.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Aerodynamics -->
+                        <div class="col-lg-4">
+                            <div class="single-cat">
+
+                                <div class="cat-icon">
+                                    <img src="{% static 'assets/img/gallery/aerodynamics.png' %}"
+                                         alt="F1 Aerodynamics">
+                                </div>
+
+                                <div class="cat-cap">
+                                    <h5>
+                                        <a href="services.html">
+                                            Аэродинамика
+                                        </a>
+                                    </h5>
+
+                                    <p>
+                                        Переднее и заднее крыло, днище и диффузор —
+                                        всё ради максимального сцепления.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Tyres -->
+                        <div class="col-lg-4">
+                            <div class="single-cat">
+
+                                <div class="cat-icon">
+                                    <img src="{% static 'assets/img/gallery/tyres.png' %}"
+                                         alt="F1 Tyres">
+                                </div>
+
+                                <div class="cat-cap">
+                                    <h5>
+                                        <a href="services.html">
+                                            Гоночные шины
+                                        </a>
+                                    </h5>
+
+                                    <p>
+                                        Soft, Medium и Hard —
+                                        правильный выбор шин может решить гонку.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Pit Stop -->
+                        <div class="col-lg-4">
+                            <div class="single-cat">
+
+                                <div class="cat-icon">
+                                    <img src="{% static 'assets/img/gallery/pitstop.png' %}"
+                                         alt="F1 Pit Stop">
+                                </div>
+
+                                <div class="cat-cap">
+                                    <h5>
+                                        <a href="services.html">
+                                            Pit Stop
+                                        </a>
+                                    </h5>
+
+                                    <p>
+                                        Несколько секунд, десятки движений
+                                        и идеальная работа всей команды.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </section>
+        <!-- F1 Garage Cards End -->
+
+        <section class="f1-anatomy">
+
+    <div class="container">
+
+        <!-- TOP -->
+        <div class="anatomy-top">
+
+            <div class="anatomy-heading">
+
+                <div class="anatomy-kicker">
+                    <span>F1 CAR / ANATOMY</span>
+                    <span>SF-25 / 2025</span>
+                </div>
+
+                <h2>
+                    Каждая деталь<br>
+                    имеет значение.
+                </h2>
+
+                <p>
+                    Современный болид Формулы-1 состоит из множества
+                    высокотехнологичных систем. Их совместная работа
+                    определяет скорость, стабильность и безопасность
+                    автомобиля на трассе.
+                </p>
+
+                <div class="anatomy-meta">
+                    <span>ENGINEERING</span>
+                    <span>PERFORMANCE</span>
+                    <span>AERODYNAMICS</span>
+                </div>
+
+            </div>
+
+
+            <!-- CAR -->
+            <div class="anatomy-visual">
+
+                <div class="visual-number">01</div>
+
+                <div class="visual-label">
+                    <span>SCUDERIA FERRARI</span>
+                    <strong>SF-25</strong>
+                </div>
+
+                <img
+                    src="{% static 'assets/img/gallery/sf25.png' %}"
+                    alt="Ferrari SF-25"
+                    class="anatomy-car"
+                >
+
+                <div class="visual-line"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PARTS -->
+        <div class="anatomy-parts">
+
+            <div class="anatomy-part">
+                <span class="part-number">01</span>
+
+                <div>
+                    <h3>Переднее крыло</h3>
+                    <p>
+                        Управляет воздушным потоком
+                        и создаёт прижимную силу.
+                    </p>
+                </div>
+
+                <span class="part-arrow">↗</span>
+            </div>
+
+
+            <div class="anatomy-part">
+                <span class="part-number">02</span>
+
+                <div>
+                    <h3>Halo</h3>
+                    <p>
+                        Защитная конструкция вокруг
+                        кокпита пилота.
+                    </p>
+                </div>
+
+                <span class="part-arrow">↗</span>
+            </div>
+
+
+            <div class="anatomy-part">
+                <span class="part-number">03</span>
+
+                <div>
+                    <h3>Понтоны</h3>
+                    <p>
+                        Направляют поток воздуха
+                        и обеспечивают охлаждение.
+                    </p>
+                </div>
+
+                <span class="part-arrow">↗</span>
+            </div>
+
+
+            <div class="anatomy-part">
+                <span class="part-number">04</span>
+
+                <div>
+                    <h3>Днище</h3>
+                    <p>
+                        Формирует значительную часть
+                        аэродинамической прижимной силы.
+                    </p>
+                </div>
+
+                <span class="part-arrow">↗</span>
+            </div>
+
+
+            <div class="anatomy-part">
+                <span class="part-number">05</span>
+
+                <div>
+                    <h3>Заднее крыло</h3>
+                    <p>
+                        Влияет на баланс автомобиля
+                        и максимальную скорость.
+                    </p>
+                </div>
+
+                <span class="part-arrow">↗</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <footer class="f1-footer">
+
+    <div class="container">
+
+        <!-- TOP -->
+
+        <div class="f1-footer-top">
+
+            <div class="f1-footer-brand">
+
+                <div class="f1-footer-logo">
+                    F1
+                </div>
+
+                <p>
+                    Скорость. Технологии. Гонка.
+                    Всё, что делает Формулу-1 особенной.
+                </p>
+
+            </div>
+
+
+            <div class="f1-footer-column">
+
+                <span class="f1-footer-label">
+                    NAVIGATION
+                </span>
+
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Команды</a></li>
+                    <li><a href="garage.html">F1 Garage</a></li>
+                    <li><a href="blog.html">Новости</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="f1-footer-column">
+
+                <span class="f1-footer-label">
+                    EXPLORE
+                </span>
+
+                <ul>
+                    <li><a href="elements.html">Hall of Fame</a></li>
+                    <li><a href="blog_details.html">Season 2026</a></li>
+                    <li><a href="contact.html">Circuit Lab</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="f1-footer-season">
+
+                <span class="f1-footer-label">
+                    SEASON
+                </span>
+
+                <strong>2026</strong>
+
+                <p>
+                    Formula 1
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LINE -->
+
+        <div class="f1-footer-line"></div>
+
+
+        <!-- BOTTOM -->
+
+        <div class="f1-footer-bottom">
+
+            <span>
+                © 2026 F1 PROJECT
+            </span>
+
+            <span>
+                BUILT FOR THE LOVE OF RACING
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Вернуться вверх" href="#">
+            <i class="fas fa-level-up-alt"></i>
+        </a>
+    </div>
+
+
+    <!-- JS here -->
+
+    <script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/animated.headline.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+
+    <script src="{% static 'assets/js/gijgo.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.sticky.js' %}"></script>
+
+    <script src="{% static 'assets/js/jquery.barfiller.js' %}"></script>
+
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/hover-direction-snake.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.form.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'assets/js/mail-script.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/plugins.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>
